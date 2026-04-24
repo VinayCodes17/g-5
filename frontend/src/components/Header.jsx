@@ -1,5 +1,4 @@
 import React from "react";
-import udemyLogo from "../assets/udemy-logo-white.webp"
 import {
   Search,
   ShoppingCart,
@@ -9,7 +8,9 @@ import {
 } from "lucide-react";
 
 const UdemyLogo = () => (
-  <img className="h-full w-auto object-contain" src={udemyLogo} alt="Udemy" />
+  <div className="text-xl font-extrabold text-brand-400 select-none whitespace-nowrap">
+    Udemy Clone
+  </div>
 );
 
 const Avatar = ({ initials = "US" }) => (
