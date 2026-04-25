@@ -91,8 +91,16 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-10 pt-6 border-t border-slate-700 text-center text-slate-500 text-xs">
-        © {new Date().getFullYear()} CRISPR. All rights reserved.
+      <div className="mt-10 pt-6 border-t border-slate-700 flex flex-col items-center gap-4 text-center text-slate-500 text-sm">
+        <div className="flex items-center gap-2 group cursor-pointer select-none">
+          <div className="w-6 h-6 rounded-md bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-500/50">
+            <span className="text-sm font-black">C</span>
+          </div>
+          <span className="text-lg font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600 drop-shadow-[0_0_8px_rgba(63,181,106,0.6)]">
+            CRISPR
+          </span>
+        </div>
+        <p>© {new Date().getFullYear()} CRISPR. All rights reserved.</p>
       </div>
     </footer>
   );

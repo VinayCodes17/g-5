@@ -33,11 +33,11 @@ export default function HomeNavbar() {
             to="/" 
             className="text-2xl font-extrabold select-none tracking-tight flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 group-hover:shadow-brand-500/50 transition-all duration-300 group-hover:scale-105">
-              <span className="text-xl font-black">U</span>
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-500/50 group-hover:shadow-[0_0_15px_rgba(63,181,106,0.8)] transition-all duration-300 group-hover:scale-105">
+              <span className="text-xl font-black">C</span>
             </div>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 group-hover:to-white transition-colors duration-300">
-              Udemy Clone
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600 drop-shadow-[0_0_8px_rgba(63,181,106,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(63,181,106,0.9)] transition-all duration-300">
+              CRISPR
             </span>
           </Link>
 
