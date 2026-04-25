@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import HomeNavbar from "../components/HomeNavbar";
 
 const dummyCourses = [
-  { id: 1, title: "Modern Web Development", domain: "Web Dev", author: "A. Sharma", price: "₹499", rating: 4.8 },
-  { id: 2, title: "Advanced React & Redux", domain: "Web Dev", author: "R. Patel", price: "₹699", rating: 4.9 },
-  { id: 3, title: "Unreal Engine 5 for Beginners", domain: "Game Dev", author: "S. Rao", price: "₹899", rating: 4.7 },
-  { id: 4, title: "Unity 3D Game Programming", domain: "Game Dev", author: "M. Singh", price: "₹799", rating: 4.6 },
-  { id: 5, title: "Machine Learning A-Z", domain: "AI/ML", author: "K. Joshi", price: "₹999", rating: 4.8 },
-  { id: 6, title: "Deep Learning with PyTorch", domain: "AI/ML", author: "P. Kumar", price: "₹899", rating: 4.9 },
-  { id: 7, title: "Data Science Bootcamp", domain: "Data Science", author: "N. Gupta", price: "₹1299", rating: 4.7 },
-  { id: 8, title: "Python for Data Analysis", domain: "Data Science", author: "L. Verma", price: "₹599", rating: 4.5 },
+  { id: 1, title: "Modern Web Development", domain: "Web Dev", author: "A. Sharma" },
+  { id: 2, title: "Advanced React & Redux", domain: "Web Dev", author: "R. Patel" },
+  { id: 3, title: "Unreal Engine 5 for Beginners", domain: "Game Dev", author: "S. Rao" },
+  { id: 4, title: "Unity 3D Game Programming", domain: "Game Dev", author: "M. Singh" },
+  { id: 5, title: "Machine Learning A-Z", domain: "AI/ML", author: "K. Joshi" },
+  { id: 6, title: "Deep Learning with PyTorch", domain: "AI/ML", author: "P. Kumar" },
+  { id: 7, title: "Data Science Bootcamp", domain: "Data Science", author: "N. Gupta" },
+  { id: 8, title: "Python for Data Analysis", domain: "Data Science", author: "L. Verma" },
 ];
 
 const domains = ["All", "Web Dev", "Game Dev", "AI/ML", "Data Science"];
@@ -85,15 +85,7 @@ export default function CoursesPage() {
                   <h3 className="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-brand-400 transition-colors">
                     {course.title}
                   </h3>
-                  <p className="text-sm text-gray-400 mb-4">{course.author}</p>
-                  
-                  <div className="mt-auto pt-4 border-t border-gray-800/60 flex items-center justify-between">
-                    <span className="text-xl font-extrabold text-white">{course.price}</span>
-                    <div className="flex items-center gap-1 bg-white/5 px-2 py-1 rounded-md">
-                      <span className="text-yellow-500 text-sm">★</span>
-                      <span className="text-sm font-medium text-gray-300">{course.rating}</span>
-                    </div>
-                  </div>
+                  <p className="text-sm text-gray-400 mt-auto">{course.author}</p>
                 </div>
               </div>
             ))

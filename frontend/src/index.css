@@ -12,3 +12,12 @@ body {
   background-color: #0f0f0f;
   color: #fff;
 }
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; box-shadow: 0 0 5px rgba(63, 181, 106, 0.4); }
+  50% { opacity: 1; box-shadow: 0 0 15px rgba(63, 181, 106, 0.8); }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}

@@ -6,7 +6,8 @@ import WatchPage from "./pages/WatchPage/WatchPage";
 import LoginPage from "./pages/LoginPage";
 import CoursesPage from "./pages/CoursesPage";
 import DevelopersPage from "./pages/DevelopersPage";
-
+import DomainsPage from "./pages/DomainsPage/DomainsPage";
+import CommunityChat from "./pages/CommunityChat/CommunityChat";
 const router = createBrowserRouter([
   // ── Auth ──────────────────────────────────────────────────────────────────
   {
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: "/developerpage",
     element: <DevelopersPage />,
+  },
+  {
+    path: "/community",
+    element: <DomainsPage />,
+  },
+  {
+    path: "/community/:domain",
+    element: <CommunityChat />,
   },
 
   // ── Main app with Layout shell ────────────────────────────────────────────
