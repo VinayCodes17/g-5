@@ -36,9 +36,14 @@ export default function LoginPage() {
     <div className="min-h-screen bg-pageBlack flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         {/* Brand */}
-        <div className="mb-8 text-center">
-          <Link to="/" className="text-3xl font-extrabold text-brand-400 tracking-tight select-none">
-            Udemy Clone
+        <div className="mb-8 flex flex-col items-center text-center">
+          <Link to="/" className="flex items-center gap-2 group cursor-pointer select-none mb-2">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-500/50 group-hover:shadow-[0_0_15px_rgba(63,181,106,0.8)] transition-all duration-300 group-hover:scale-105">
+              <span className="text-2xl font-black">C</span>
+            </div>
+            <span className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600 drop-shadow-[0_0_8px_rgba(63,181,106,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(63,181,106,0.9)] transition-all duration-300">
+              CRISPR
+            </span>
           </Link>
           <p className="mt-2 text-gray-400 text-sm">Sign in with your IIITN Google account</p>
         </div>
