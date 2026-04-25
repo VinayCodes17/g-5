@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HomeNavbar from "../components/HomeNavbar";
+import Footer from "../components/Footer";
 
 // Custom SVG Icons to avoid lucide-react build errors
 const SparklesIcon = () => (
@@ -154,17 +155,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-black/80 backdrop-blur-xl border-t border-white/10 mt-auto">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-xl font-extrabold text-brand-500 tracking-wider">UDEMY CLONE</div>
-          <div className="text-sm text-gray-500">© {new Date().getFullYear()} All rights reserved.</div>
-          <div className="flex gap-6">
-            <Link to="/terms" className="text-gray-400 hover:text-white transition-colors text-sm">Terms</Link>
-            <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy</Link>
-            <Link to="/help" className="text-gray-400 hover:text-white transition-colors text-sm">Support</Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

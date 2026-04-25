@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HomeNavbar from "../components/HomeNavbar";
+import Footer from "../components/Footer";
 
 const dummyCourses = [
   { id: 1, title: "Modern Web Development", domain: "Web Dev", author: "A. Sharma" },
@@ -102,6 +103,7 @@ export default function CoursesPage() {
           )}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
